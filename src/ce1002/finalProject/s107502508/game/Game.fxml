@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.finalProject.s107502508.game.GameController">
+   <children>
+      <ScrollPane hbarPolicy="ALWAYS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="600.0" prefWidth="1200.0" snapToPixel="false" vbarPolicy="NEVER">
+        <content>
+            <AnchorPane fx:id="_field" minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="2000.0">
+               <children>
+                  <ImageView fx:id="_ground2" fitHeight="207.0" fitWidth="1011.0" layoutY="373.0">
+                     <image>
+                        <Image url="@_ground.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="_ground1" fitHeight="207.0" fitWidth="1011.0" layoutX="1011.0" layoutY="373.0">
+                     <image>
+                        <Image url="@_ground.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="_playerTower" fitHeight="247.0" fitWidth="343.0" layoutX="1671.0" layoutY="236.0">
+                     <image>
+                        <Image url="@_player/_player_tower.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="_enemyTower" fitHeight="212.0" fitWidth="373.0" layoutX="-17.0" layoutY="245.0">
+                     <image>
+                        <Image url="@_enemy/_enemy_tower.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="25.0" layoutY="215.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: red;" />
+                  <Pane fx:id="_enemyTowerHP" layoutX="25.0" layoutY="215.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: green;" />
+                  <Pane layoutX="1678.0" layoutY="192.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: red;" />
+                  <Pane fx:id="_playerTowerHP" layoutX="1678.0" layoutY="192.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: green;" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button mnemonicParsing="false" onAction="#onBackPressed" text="返回" AnchorPane.bottomAnchor="530.0" AnchorPane.leftAnchor="1100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Text fx:id="_word" layoutY="-12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="左右拖曳查看畫面&#10;將滑鼠移動到下方圖標上可在此查看說明" wrappingWidth="800.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="_player4" fitHeight="118.0" fitWidth="80.0" layoutX="526.0" layoutY="630.0">
+         <image>
+            <Image url="@_player/_player_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_player5" fitHeight="71.0" fitWidth="53.0" layoutX="701.0" layoutY="669.0">
+         <image>
+            <Image url="@_player/_player_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_player2" fitHeight="116.0" fitWidth="78.0" layoutX="199.0" layoutY="643.0">
+         <image>
+            <Image url="@_player/_player_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_player3" fitHeight="122.0" fitWidth="89.0" layoutX="354.0" layoutY="644.0">
+         <image>
+            <Image url="@_player/_player_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemy1" fitHeight="118.0" fitWidth="118.0" layoutX="19.0" layoutY="1034.0">
+         <image>
+            <Image url="@_enemy/_enemy_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemy2" fitHeight="122.0" fitWidth="118.0" layoutX="204.0" layoutY="1036.0">
+         <image>
+            <Image url="@_enemy/_enemy_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemy3" fitHeight="122.0" fitWidth="114.0" layoutX="339.0" layoutY="1046.0">
+         <image>
+            <Image url="@_enemy/_enemy_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemy4" fitHeight="134.0" fitWidth="98.0" layoutX="499.0" layoutY="1032.0">
+         <image>
+            <Image url="@_enemy/_enemy_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemy5" fitHeight="96.0" fitWidth="96.0" layoutX="677.0" layoutY="1051.0">
+         <image>
+            <Image url="@_enemy/_enemy_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_playerAtk4" fitHeight="144.0" fitWidth="118.0" layoutX="506.0" layoutY="776.0">
+         <image>
+            <Image url="@_player/_player_4_heal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_playerAtk1" fitHeight="97.0" fitWidth="111.0" layoutX="22.0" layoutY="784.0">
+         <image>
+            <Image url="@_player/_player_1_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_playerAtk2" fitHeight="71.0" fitWidth="124.0" layoutX="169.0" layoutY="797.0">
+         <image>
+            <Image url="@_player/_player_2_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_playerAtk3" fitHeight="100.0" fitWidth="113.0" layoutX="338.0" layoutY="783.0">
+         <image>
+            <Image url="@_player/_player_3_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemyAtk1" fitHeight="100.0" fitWidth="114.0" layoutX="20.0" layoutY="1178.0">
+         <image>
+            <Image url="@_enemy/_enemy_1_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemyAtk2" fitHeight="56.0" fitWidth="111.0" layoutX="194.0" layoutY="1200.0">
+         <image>
+            <Image url="@_enemy/_enemy_2_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemyAtk3" fitHeight="100.0" fitWidth="111.0" layoutX="362.0" layoutY="1178.0">
+         <image>
+            <Image url="@_enemy/_enemy_3_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemyAtk4" fitHeight="207.0" fitWidth="221.0" layoutX="453.0" layoutY="1138.0">
+         <image>
+            <Image url="@_enemy/_enemy_4_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_enemyAtk5" fitHeight="144.0" fitWidth="68.0" layoutX="701.0" layoutY="1156.0">
+         <image>
+            <Image url="@_enemy/_enemy_5_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_playerAtk5" fitHeight="144.0" fitWidth="68.0" layoutX="684.0" layoutY="776.0">
+         <image>
+            <Image url="@_player/_player_5_atk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_player1" fitHeight="100.0" fitWidth="71.0" layoutX="62.0" layoutY="641.0">
+         <image>
+            <Image url="@_player/_player_1.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#player1Pressed" onMouseEntered="#onEnterButton1" onMouseExited="#onExitButton" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="426.0" AnchorPane.rightAnchor="1478.0" AnchorPane.topAnchor="442.0">
+         <image>
+            <Image url="@_player/_player_1_button.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#player2Pressed" onMouseEntered="#onEnterButton2" onMouseExited="#onExitButton" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="561.0" AnchorPane.rightAnchor="1350.0" AnchorPane.topAnchor="442.0">
+         <image>
+            <Image url="@_player/_player_2_button.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#player4Pressed" onMouseEntered="#onEnterButton4" onMouseExited="#onExitButton" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="857.0" AnchorPane.rightAnchor="1029.0" AnchorPane.topAnchor="442.0">
+         <image>
+            <Image url="@_player/_player_4_button.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#player3Pressed" onMouseEntered="#onEnterButton3" onMouseExited="#onExitButton" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="694.0" AnchorPane.rightAnchor="1188.0" AnchorPane.topAnchor="442.0">
+         <image>
+            <Image url="@_player/_player_3_button.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#player5Pressed" onMouseEntered="#onEnterButton5" onMouseExited="#onExitButton" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="1019.0" AnchorPane.rightAnchor="897.0" AnchorPane.topAnchor="442.0">
+         <image>
+            <Image url="@_player/_player_5_button.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="_NP" fill="#eeff00" strokeType="OUTSIDE" strokeWidth="0.0" text="NP" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="456.31640625">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Text>
+      <Text fx:id="_win" fill="#38df0a" strokeType="OUTSIDE" strokeWidth="0.0" text="ＹＯＵ　ＷＩＮ！" visible="false" AnchorPane.bottomAnchor="390.2421875" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="1024.0" AnchorPane.topAnchor="98.31640625">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Text>
+      <Text fx:id="_lose" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="ＹＯＵ　ＬＯＳＥ！" visible="false" AnchorPane.bottomAnchor="390.2421875" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="1024.0" AnchorPane.topAnchor="98.31640625">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
